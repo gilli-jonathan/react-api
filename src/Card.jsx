@@ -1,4 +1,4 @@
-export default function Card(obj) {
+export default function Card({ obj }) {
 
 
 
