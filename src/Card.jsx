@@ -18,23 +18,14 @@ export default function Card({ obj }) {
 
                             <h2 className="accordion-header" id={`heading-${obj.id}`}>
                                 <button
-                                    className="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target={`#collapse-${obj.id}`}
-                                    aria-expanded="false"
-                                    aria-controls={`collapse-${obj.id}`}
-                                >
+                                    className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${obj.id}`} aria-expanded="false" aria-controls={`collapse-${obj.id}`} >
                                     Scopri di più
                                 </button>
                             </h2>
 
                             <div
-                                id={`collapse-${obj.id}`}
-                                className="accordion-collapse collapse"
-                                aria-labelledby={`heading-${obj.id}`}
+                                id={`collapse-${obj.id}`} className="accordion-collapse collapse" aria-labelledby={`heading-${obj.id}`} >
 
-                            >
                                 <div className="accordion-body">
                                     <h6 className="card-title">anno di nascita</h6>
                                     <p className="card-text">{obj.birth_year}</p>
@@ -45,6 +36,7 @@ export default function Card({ obj }) {
                                     <h6 className="card-title">premi</h6>
                                     <p className="card-text">{obj.awards}</p>
                                 </div>
+
                             </div>
                         </div>
                     </div>
