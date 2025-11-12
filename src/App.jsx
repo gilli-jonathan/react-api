@@ -1,4 +1,21 @@
+import { useEffect, useState } from "react"
+import axios from "axios"
+
 function App() {
+
+  const attrici = "https://lanciweb.github.io/demo/api/actresses/"
+
+  const attori = "https://lanciweb.github.io/demo/api/actresses/"
+
+
+  axios.get(attrici)
+    .then((resp) => {
+      console.log(resp.data)
+    });
+
+
+
+
 
 
   return (
