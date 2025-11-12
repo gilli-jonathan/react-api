@@ -2,8 +2,10 @@ export default function Card(obj) {
 
 
 
+
+
     return (
-        <div key={obj.id} className="card" style={{ width: "18rem" }}>
+        <div className="card" style={{ width: "18rem" }}>
             <img src={obj.image} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Nome</h5>
