@@ -20,11 +20,18 @@ function App() {
 
   return (
     <>
-      <h1 className="my-5">ATTORI DI HOLLYWOOD</h1>
+      <h1 className="my-5 container">ATTORI DI HOLLYWOOD</h1>
 
-      {arrAttrici.map((obj) => (
-        <Card key={obj.id} obj={obj} />
-      ))}
+      <section className="container">
+        <div className="row row-cols-4 g-2">
+          {arrAttrici.map((obj) => (
+            <Card key={obj.id} obj={obj} />
+          ))}
+
+        </div>
+
+      </section>
+
 
 
 
